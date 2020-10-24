@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mx.goi.goiwallet">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/goi_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/goi_logo"
+        android:supportsRtl="true">
+        <activity
+            android:name=".ui.Registro.RegistrarUsuario"
+            android:label="@string/title_activity_registrar_usuario"
+            android:theme="@style/Theme.GoiWallet.NoActionBar"></activity>
+        <activity android:name=".ui.Contrasena.ResetPassword" />
+        <activity
+            android:name=".ui.Envios.Envios"
+            android:label="@string/title_activity_envios"
+            android:theme="@style/Theme.GoiWallet.NoActionBar" />
+        <activity
+            android:name=".ui.Apartados.ListaApartados"
+            android:label="@string/title_activity_lista_apartados"
+            android:theme="@style/Theme.GoiWallet.NoActionBar" />
+        <activity android:name=".ui.Fondeo.FondearApartado" />
+        <activity
+            android:name=".ui.Sesion.InicioSesion"
+            android:theme="@style/Theme.GoiWallet.NoActionBar" />
+        <activity
+            android:name=".ui.Sesion.Conexion$Splash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.GoiWallet.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash_v1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/Theme.GoiWallet.Fullscreen" />
+        <activity
+            android:name=".Principal"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GoiWallet.NoActionBar" />
+    </application>
+
+</manifest>

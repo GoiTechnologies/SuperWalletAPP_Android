@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacion_movil"
+    app:startDestination="@+id/navegacion_monedero">
+
+    <fragment
+        android:id="@+id/navegacion_perfil"
+        android:name="mx.goi.goiwallet.ui.Perfil.PerfilFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/navegacion_monedero"
+        android:name="mx.goi.goiwallet.ui.Monedero.MonederoFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_monedero" />
+
+    <fragment
+        android:id="@+id/navegacion_cuentas"
+        android:name="mx.goi.goiwallet.ui.Cuentas.CuentasFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_cuentas" />
+</navigation>
